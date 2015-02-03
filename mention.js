@@ -111,9 +111,12 @@
                                 }
                             }
                             for (i in priorities) {
-                                var j;
-                                for (j in priorities[i]) {
-                                    finals.push(priorities[i][j]);
+                                var j, priority = priorities[i];
+                                for (j in priority) {
+                                    if(priority.hasOwnProperty(j)
+                                    {
+                                        finals.push(priority[j]);
+                                    }
                                 }
                             }
                             return finals;
